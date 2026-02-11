@@ -6,8 +6,8 @@
 """Installation script for the 'isaaclab' python package."""
 
 import os
-import toml
 
+import toml
 from setuptools import setup
 
 # Obtain the extension data from the extension.toml file
@@ -31,7 +31,7 @@ INSTALL_REQUIRES = [
     "trimesh",
     "pyglet<2",
     # image processing
-    "transformers",
+    "transformers==4.57.6",
     "einops",  # needed for transformers, doesn't always auto-install
     "warp-lang",
     # make sure this is consistent with isaac sim version
@@ -42,7 +42,7 @@ INSTALL_REQUIRES = [
     "pytest",
     "pytest-mock",
     "junitparser",
-    "flatdict==4.0.1",
+    "flatdict==4.0.0",
     "flaky",
     "packaging",
 ]
